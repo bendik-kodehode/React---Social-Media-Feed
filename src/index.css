@@ -5,8 +5,9 @@
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient(to top, #0061ff, #60efff);
+    padding: 30px 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ebf4f5, #b5c6e0);
     display: flex;
     justify-content: center;
 }

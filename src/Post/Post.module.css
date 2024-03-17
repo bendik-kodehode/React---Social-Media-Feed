@@ -1,7 +1,7 @@
 .card {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to top, rgba(19, 18, 82, 0.2), rgba(72, 58, 255, 0.1));
     max-width: 500px;
-    min-height: 100px;
+    min-height: 120px;
     padding: 5px 10px;
     border-radius: 8px;
     display: flex;
@@ -10,6 +10,7 @@
 
 .title {
     font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
 .paragraph {
