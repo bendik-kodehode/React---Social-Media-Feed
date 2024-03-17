@@ -1,0 +1,39 @@
+.card {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+    max-width: 500px;
+    min-height: 100px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.paragraph {
+}
+
+.likeContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.icon {
+    max-height: 20px;
+}
+
+.faThumbsUp {
+    font-size: 16px;
+    color: rgb(40, 90, 255);
+}
