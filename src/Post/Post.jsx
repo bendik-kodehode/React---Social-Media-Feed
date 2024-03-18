@@ -4,7 +4,7 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 
 function Post({post, index}) {
     const {username, content, likes, timestamp} = post;
-    const cleanedTimestamp = timestamp.replace("T", " ").replace("Z", " UTC")
+    const cleanedTimestamp = timestamp.replace("T", " ").replace("Z", " ")
     return (
         <li className={style.card} key={index}>
             <div className={style.contentContainer}>

@@ -1,0 +1,14 @@
+form {
+    background-color: blue;
+}
+
+button {
+    width: fit-content;
+}
+
+.content {
+    background-color: rgb(62, 62, 207);
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
