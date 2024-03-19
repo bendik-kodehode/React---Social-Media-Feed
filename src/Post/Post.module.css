@@ -43,15 +43,3 @@
 .faThumbsUp {
     color: rgb(40, 90, 255);
 }
-
-.faTrashAlt {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.1s ease-out;
-}
-
-.faTrashAlt:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in;
-}
