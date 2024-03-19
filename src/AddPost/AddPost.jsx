@@ -17,7 +17,9 @@ function AddPost({setPosts}) {
         <form onSubmit={handleSubmit}>
             <input type="text" name="username" placeholder="Username" autoComplete="off" required></input>
             <textarea name="content" placeholder="What's on your mind?" autoComplete="off" required></textarea>
-            <button type="submit">Post</button>
+            <div className={style.btnContainer}>
+                <button type="submit">Post</button>
+            </div>
         </form>
     )
 }
