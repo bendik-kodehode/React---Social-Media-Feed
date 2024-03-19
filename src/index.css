@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+#root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 body {
-    padding: 30px 0;
     min-height: 100vh;
     background: linear-gradient(to bottom, #ebf4f5, #b5c6e0);
+}
+
+header {
+    margin-bottom: 30px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }

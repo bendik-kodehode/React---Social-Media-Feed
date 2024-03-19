@@ -1,0 +1,14 @@
+nav {
+    background: linear-gradient(to top, rgb(97, 97, 97), gray);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    border-radius: 0 0 20px 20px;
+    gap: 5px;
+}
+
+label {
+    color: white;
+}
