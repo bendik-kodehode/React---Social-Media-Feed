@@ -2,8 +2,7 @@ import style from "./Post.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 
-function Post({post, index}) {
-    const {username, content, likes, timestamp} = post;
+function Post({post : {username, content, likes, timestamp}, index}) {
     const cleanedTimestamp = timestamp.replace("T", " ").replace("Z", " ");
 
     return (
