@@ -11,6 +11,8 @@ function App() {
 
     const handleUserSelect = user => setSelectedUser(user);
 
+    console.log(posts);
+
     return (
     <>
     <header>
@@ -18,7 +20,7 @@ function App() {
     </header>
     <main>
         <AddPost setPosts={setPosts} selectedUser={selectedUser}/>
-        <Feed posts={posts} selectedUser={selectedUser}/>
+        <Feed posts={posts} selectedUser={selectedUser} setPosts={setPosts}/>
     </main>
     </>
     )
