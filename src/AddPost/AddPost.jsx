@@ -12,7 +12,7 @@ function AddPost({setPosts}) {
             timestamp: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"), // Removes milliseconds.
             likes: 1
         };
-        setPosts(prevPosts => [...prevPosts, newPost]);
+        setPosts(prevPosts => [newPost, ...prevPosts]);
     };
 
     return (
