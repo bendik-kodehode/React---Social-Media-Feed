@@ -1,4 +1,4 @@
-const posts = [
+const defaultPosts = [
   {
     username: "john_doe",
     content: "Just had an amazing hike in the mountains! #NatureLovers #Hiking",
@@ -65,4 +65,4 @@ const posts = [
     likes: 198,
   },
 ];
-export default posts;
+export default defaultPosts;

@@ -1,11 +1,11 @@
-import posts from "../assets/posts";
+
 import Post from "../Post/Post";
 import style from "./Feed.module.css"
 
-function Feed() {
+function Feed({arr}) {
     return (
         <ul className={style.list}>
-            {posts.map((post, index) => <Post post={post} key={index}/>
+            {arr.map((post, index) => <Post post={post} key={index}/>
             )}
         </ul>
         )
