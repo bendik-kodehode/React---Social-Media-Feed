@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 
 function Post({post : {username, content, likes, timestamp}, index}) {
-    const cleanedTimestamp = timestamp.replace("T", " ").replace("Z", " ");
-
+    const cleanedTimestamp = timestamp
+        .replace("T", " ")
+        .replace("Z", "")
+        .replace(/:\d{2}$/, "");
+        
     return (
         <li className={style.card} key={index}>
             <div className={style.contentContainer}>
