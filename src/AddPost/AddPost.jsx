@@ -1,6 +1,4 @@
 import style from "./AddPost.module.css";
-import defaultPosts from "../assets/posts";
-import { useState } from "react";
 
 function AddPost({setPosts}) {
     const handleSubmit = (e) => {
@@ -16,12 +14,10 @@ function AddPost({setPosts}) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div className={style.content}>
-                <input type="text" name="username" placeholder="Username" autoComplete="off" required></input>
-                <textarea name="content" placeholder="What's on your mind?" autoComplete="off" required></textarea>
-                <button type="submit">Post</button>
-            </div>
+        <form onSubmit={handleSubmit} className={style.content}>
+            <input type="text" name="username" placeholder="Username" autoComplete="off" required></input>
+            <textarea name="content" placeholder="What's on your mind?" autoComplete="off" required></textarea>
+            <button type="submit">Post</button>
         </form>
     )
 }
