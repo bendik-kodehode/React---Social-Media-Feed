@@ -2,10 +2,10 @@
 import Post from "../Post/Post";
 import style from "./Feed.module.css"
 
-function Feed({arr}) {
+function Feed({posts, selectedUser}) {
     return (
         <ul className={style.list}>
-            {arr.map((post, index) => <Post post={post} key={index}/>
+            {posts.map((post, index) => <Post post={post} key={index} selectedUser={selectedUser}/>
             )}
         </ul>
         )

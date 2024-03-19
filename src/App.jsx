@@ -6,16 +6,19 @@ import Navbar from "./Navbar/Navbar";
 
 function App() {
     const [posts, setPosts] = useState(defaultPosts);
-    const users = posts.map(post => post.username);
+    const users = (defaultPosts.map(post => post.username));
+    const [selectedUser, setSelectedUser] = useState("");
+
+    const handleUserSelect = user => setSelectedUser(user);
 
     return (
     <>
     <header>
-        <Navbar users={users}/>
+        <Navbar users={users} handleUserSelect={handleUserSelect}/>
     </header>
     <main>
-        <AddPost setPosts={setPosts}/>
-        <Feed arr={posts}/>
+        <AddPost setPosts={setPosts} selectedUser={selectedUser}/>
+        <Feed posts={posts} selectedUser={selectedUser}/>
     </main>
     </>
     )
