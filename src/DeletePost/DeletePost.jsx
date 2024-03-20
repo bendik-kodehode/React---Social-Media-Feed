@@ -8,8 +8,6 @@ function DeletePost({user, selectedUser, setPosts, index}) {
         setPosts(p => p.filter((_, i) => i !== index))
     }
 
-    console.log("index: ", index);
-
     if (user === selectedUser) {
         return <FontAwesomeIcon icon={faTrashAlt} className={style.faTrashAlt} onClick={handlePostDelete}/> 
     } else {

@@ -9,8 +9,6 @@ function Post({post : {username, content, likes, timestamp}, index, selectedUser
         .replace("Z", "")
         .replace(/:\d{2}$/, "");
 
-        console.log("PostIndex: ", index);
-
     return (
         <li className={style.card} key={index}>
             <div className={style.contentContainer}>

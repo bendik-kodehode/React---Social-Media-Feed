@@ -3,12 +3,20 @@ nav {
     max-width: 800px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px 15px;
     border-radius: 0 0 20px 20px;
-    gap: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 label {
     color: white;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

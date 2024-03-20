@@ -1,0 +1,11 @@
+.faHome {
+    font-size: 24px;
+    color: rgb(194, 194, 194);
+    transition: color 0.2s ease-in;
+}
+
+.faHome:hover {
+    color: rgb(212, 212, 212);
+    transition: color 0.2s ease-out;
+    cursor: pointer;
+}
