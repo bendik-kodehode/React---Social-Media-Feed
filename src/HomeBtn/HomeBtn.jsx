@@ -11,7 +11,7 @@ function HomeBtn() {
     }
 
     return (
-        <FontAwesomeIcon icon={faHome} className={style.faHome} onClick={handleHome}/>
+        <FontAwesomeIcon icon={faHome} className={style.faHome} onClick={handleHome} />
     )
 }
 

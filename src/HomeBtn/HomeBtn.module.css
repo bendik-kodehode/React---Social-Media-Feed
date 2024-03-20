@@ -2,6 +2,7 @@
     font-size: 24px;
     color: rgb(194, 194, 194);
     transition: color 0.2s ease-in;
+    padding: 5px;
 }
 
 .faHome:hover {
