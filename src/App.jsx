@@ -11,8 +11,6 @@ function App() {
 
     const handleUserSelect = user => setSelectedUser(user);
 
-    console.log(posts);
-
     return (
     <>
     <header>
